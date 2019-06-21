@@ -1,0 +1,37 @@
+<div class="grid-container">
+  <h1 class="mat-h1">My contacts</h1>
+  <mat-grid-list cols="12" rowHeight="90vh">
+    <mat-grid-tile [colspan]="2" [rowspan]="2"></mat-grid-tile>
+    <mat-grid-tile [colspan]="8" [rowspan]="2">
+      <mat-card class="dashboard-card-search">
+        <!--       <mat-card-header>
+                 <mat-card-title>
+                   <h3>Search</h3>
+                   <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+                     <mat-icon>more_vert</mat-icon>
+                   </button>
+                   <mat-menu #menu="matMenu" xPosition="before">
+                     <button mat-menu-item>Expand</button>
+                     <button mat-menu-item>Remove</button>
+                   </mat-menu>
+                 </mat-card-title>
+               </mat-card-header>-->
+        <mat-card-content class="dashboard-card-content">
+          <div>
+            <app-contacts></app-contacts>
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="dashboard-card-result">
+
+        <mat-card-content class="dashboard-card-content">
+          <div>
+            <app-contact-list></app-contact-list>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="2" [rowspan]="2"></mat-grid-tile>
+  </mat-grid-list>
+</div>

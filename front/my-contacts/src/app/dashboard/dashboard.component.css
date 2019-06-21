@@ -1,0 +1,30 @@
+.grid-container {
+  margin: 20px;
+}
+
+.dashboard-card-search {
+  position: absolute;
+  height: 2em;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+.dashboard-card-result {
+  position: absolute;
+  height: 60vh;
+  top: 150px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  opacity: 0.5;
+}
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+}

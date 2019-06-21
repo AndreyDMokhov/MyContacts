@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: MyContacts
+  datasource:
+    username: root
+    password: r00t
+    url: jdbc:mysql://127.0.0.1:3306/my_contacts?createDatabaseIfNotExist=true&useSSL=true&verifyServerCertificate=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    properties:
+      hibernate:
+        id:
+          new_generator_mappings: true
+        dialect: org.hibernate.dialect.MySQL5Dialect
+
+    show-sql: true
+
